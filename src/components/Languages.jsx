@@ -4,7 +4,7 @@ export default function Languages() {
             <h3>Idiomas</h3>
 
             <p>Español: Nativo</p>
-            <p>Inglés: Básico (lectura y comprensión técnica)</p>
+            <p>Inglés: Básico (lectura técnica)</p>
         </section>
     );
 }
