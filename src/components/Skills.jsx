@@ -1,12 +1,12 @@
 export default function Skills() {
     const skillGroups = [
         { title: "Lenguajes", items: ["JavaScript (ES6+)", "TypeScript", "PHP", "MQL4", "HTML5", "CSS3"] },
-        { title: "Backend & Cloud", items: ["Node.js", "Express", "Symfony", "Laravel", "Vercel", "GitHub Actions"] },
+        { title: "Backend & Cloud", items: ["NestJS", "Node.js (Express)", "Prisma", "TypeORM", "Laravel", "Symfony", "GitHub Actions", "Vercel"] },
         { title: "Inteligencia Artificial", items: ["Google Gemini API", "Análisis de Texto", "Automatización de IA"] },
-        { title: "Bases de Datos", items: ["MongoDB Atlas", "PostgreSQL", "MySQL", "Oracle"] },
-        { title: "Frontend & UI", items: ["React", "Vite", "Tailwind CSS", "jQuery"] },
+        { title: "Bases de Datos", items: ["PostgreSQL", "MySQL", "MongoDB Atlas", "SQL Server", "Oracle"] },
+        { title: "Frontend & UI", items: ["React 19", "Zustand", "TanStack Query", "Styled Components", "Tailwind CSS", "Vite"] },
         { title: "Mobile", items: ["Flutter", "Android Studio"] },
-        { title: "Herramientas", items: ["Git", "APIs REST", "JSON/JWT", "OAuth2", "PDF.js"] }
+        { title: "Herramientas & Patrones", items: ["Zod", "RxJS", "Git", "APIs REST", "JSON/JWT", "OAuth2", "PDF.js"] }
     ];
 
     return (

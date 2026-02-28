@@ -36,7 +36,7 @@ export default function Header() {
                     </div>
                     <div>
                         <strong style={{ color: "var(--accent-primary)" }}>Backend</strong>
-                        <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>Node.js (ESM), PHP (Symfony/Laravel), Escalabilidad.</p>
+                        <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>NestJS, Node.js (ESM), PHP (Symfony/Laravel), Escalabilidad.</p>
                     </div>
                 </div>
             </div>
