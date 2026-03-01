@@ -1,9 +1,26 @@
 import { projects } from "../data/projects";
+import Carousel from "./Carousel";
 
 export default function Projects() {
+    const projectImages = projects.map(p => p.image);
+
     return (
         <section id="projects">
-            <h3>Proyectos Destacados</h3>
+            <h3>Proyectos & Innovación</h3>
+
+            <Carousel images={projectImages} />
+
+            <div className="tech-explanation">
+                <h4 style={{ color: 'var(--accent-primary)', marginBottom: '1rem' }}>Evolución Tecnológica del Portfolio</h4>
+                <p>
+                    Este portfolio refleja mi dominio en el desarrollo <strong>Full-Stack</strong> y la integración de <strong>Inteligencia Artificial</strong>.
+                    Utilizo <strong>React 19</strong> con <strong>Vite</strong> para interfaces ultrarrápidas, complementado con <strong>Node.js</strong> y <strong>NestJS</strong> en el backend para una lógica de negocio robusta y escalable.
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                    <strong>Nuevas Implementaciones:</strong> He integrado <strong>Google Gemini AI</strong> para la automatización de procesamiento de datos complejos y <strong>WhatsApp Meta API</strong> para notificaciones en tiempo real, llevando mis proyectos más allá de la web tradicional hacia un ecosistema de agentes inteligentes.
+                </p>
+            </div>
+
             <div className="grid">
                 {projects.map((p, i) => (
                     <div key={i} className="card" style={{ display: "flex", flexDirection: "column" }}>
