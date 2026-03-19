@@ -4,7 +4,7 @@ export default function Header() {
             <div style={{ marginBottom: "2rem" }}>
                 <span className="pill">Disponible para nuevos proyectos</span>
             </div>
-            <h1>OTONIEL BERROA ARIAS</h1>
+            <h1>OTONIEL BERROA</h1>
             <h2>Ingeniero de Software – Backend, Automatización & Sistemas Basados en Reglas</h2>
 
             <p style={{ fontSize: "1.1rem", color: "var(--text-muted)", maxWidth: "700px", margin: "1.5rem 0 2rem 0" }}>

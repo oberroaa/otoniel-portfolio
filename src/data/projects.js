@@ -1,17 +1,17 @@
 export const projects = [
     {
         title: "Ecosistema de Automatización de Pedidos (Gmail-PDF-Agent)",
-        tech: "Node.js, Google Gemini AI, MongoDB Atlas, GitHub Actions",
+        tech: "Node.js, Google Gemini, Meta WhatsApp Cloud API, Gmail API, MongoDB, GitHub Actions, Vercel",
         image: "/projects-showcase/gmail-pdf-agent.png",
         description:
-            "Agente inteligente que orquesta la lectura de correos, descarga de adjuntos y análisis de datos industriales. Logro: Eliminación del procesamiento manual de PDFs mediante un motor de extracción basado en reglas dinámicas, notificando resultados vía WhatsApp y Email de forma autónoma."
+            "Agente inteligente que orquesta la lectura de correos, descarga de adjuntos y análisis de datos industriales. Logro: Eliminación del procesamiento manual de PDFs mediante un motor de extracción basado en reglas dinámicas coordinadas por un Admin Panel con IA (Gemini Pro), notificando resultados vía WhatsApp Oficial y Email de forma autónoma."
     },
     {
         title: "Plataforma de Tokenización & Crowdfunding (ICO)",
-        tech: "Express, Prisma ORM, PostgreSQL, Zod, TanStack Query, Zustand",
+        tech: "Express, Prisma ORM, PostgreSQL, Zod, TanStack Query, Zustand, Postman",
         image: "/projects-showcase/ico-platform.png",
         description:
-            "Infraestructura robusta para la gestión de ventas de tokens. Incluye un sistema de KYC (Know Your Customer) multietapa, gestión de rondas de inversión con precios dinámicos y un panel administrativo para la validación de transacciones y documentos mediante una arquitectura segura de servicios."
+            "Infraestructura robusta para la gestión de ventas de tokens. Incluye un sistema de KYC multietapa, gestión de rondas con precios dinámicos y arquitectura Security-First (Rate Limiting, Helmet, JWT) para la validación de transacciones y documentos mediante una API segura de servicios."
     },
     {
         title: "ChronoWar: Card Combat Arena",
