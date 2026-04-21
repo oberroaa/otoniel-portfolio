@@ -12,30 +12,31 @@ export default function Experience() {
                 </p>
                 <div className="grid">
                     <div>
-                        <strong style={{ fontSize: "0.95rem" }}>Arquitecturas Serverless</strong>
+                        <strong style={{ fontSize: "0.95rem" }}>Orquestación de Agentes IA</strong>
                         <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginTop: "0.5rem" }}>
-                            Implementación de soluciones integradas en la nube utilizando Vercel y GitHub Actions para CI/CD continuo.
+                            Diseño de flujos de trabajo autónomos que integran LLMs (Gemini) con APIs industriales para la toma de decisiones basada en datos.
                         </p>
                     </div>
                     <div>
-                        <strong style={{ fontSize: "0.95rem" }}>Motores de Reglas</strong>
+                        <strong style={{ fontSize: "0.95rem" }}>Sistemas de Misión Crítica</strong>
                         <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginTop: "0.5rem" }}>
-                            Sistemas lógicos para transformación de datos no estructurados en información operativa crítica.
+                            Desarrollo de motores de validación lógica para procesos industriales y plataformas financieras (ICO/KYC) con alta disponibilidad.
                         </p>
                     </div>
                     <div>
-                        <strong style={{ fontSize: "0.95rem" }}>Integración de APIs</strong>
+                        <strong style={{ fontSize: "0.95rem" }}>Arquitecturas de Datos</strong>
                         <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginTop: "0.5rem" }}>
-                            Experticia en ecosistemas de Google (OAuth2), Meta (WhatsApp Cloud API) y modelos avanzados de IA.
+                            Modelado de bases de datos relacionales y no relacionales escalables, optimizadas para consultas complejas y auditoría en tiempo real.
                         </p>
                     </div>
                     <div>
-                        <strong style={{ fontSize: "0.95rem" }}>Full-Cycle Development</strong>
+                        <strong style={{ fontSize: "0.95rem" }}>Ingeniería Full-Cycle</strong>
                         <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginTop: "0.5rem" }}>
-                            Gestión técnica de principio a fin, desde el análisis de requerimientos hasta el despliegue final.
+                            Liderazgo técnico en todo el ciclo de vida del software, desde la conceptualización hasta la automatización de despliegues (CI/CD).
                         </p>
                     </div>
                 </div>
+
             </div>
         </section>
     );

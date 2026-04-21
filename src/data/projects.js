@@ -1,30 +1,31 @@
 export const projects = [
     {
         title: "Ecosistema de Automatización de Pedidos (Gmail-PDF-Agent)",
-        tech: "Node.js, Google Gemini, Meta WhatsApp Cloud API, Gmail API, MongoDB, GitHub Actions, Vercel",
+        tech: "Node.js, Google Gemini Pro, Meta WhatsApp Cloud API, Gmail API, MongoDB, GitHub Actions",
         image: "/projects-showcase/gmail-pdf-agent.png",
         description:
-            "Agente inteligente que orquesta la lectura de correos, descarga de adjuntos y análisis de datos industriales. Logro: Eliminación del procesamiento manual de PDFs mediante un motor de extracción basado en reglas dinámicas coordinadas por un Admin Panel con IA (Gemini Pro), notificando resultados vía WhatsApp Oficial y Email de forma autónoma."
+            "Agente inteligente de orquestación industrial. Implementa un motor de extracción basado en visión e IA para transformar PDFs no estructurados en datos operativos. Logro técnico: Sistema de 'Validación Lógica Multicapa' que cruza datos de inventario y pedidos en tiempo real, con notificaciones automatizadas vía WhatsApp Oficial y Email."
     },
     {
-        title: "Plataforma de Tokenización & Crowdfunding (ICO)",
-        tech: "Express, Prisma ORM, PostgreSQL, Zod, TanStack Query, Zustand, Postman",
+        title: "Plataforma de Tokenización & Crowdfunding (KYC/ICO)",
+        tech: "Express, Prisma ORM, PostgreSQL, Zod, TanStack Query, Zustand, JWT",
         image: "/projects-showcase/ico-platform.png",
         description:
-            "Infraestructura robusta para la gestión de ventas de tokens. Incluye un sistema de KYC multietapa, gestión de rondas con precios dinámicos y arquitectura Security-First (Rate Limiting, Helmet, JWT) para la validación de transacciones y documentos mediante una API segura de servicios."
+            "Infraestructura financiera de alta disponibilidad para preventa de tokens. Diseñada bajo principios de 'Security-First' con validación de esquemas mediante Zod, gestión de estados complejos con TanStack Query y un flujo de KYC automatizado que procesa documentos de identidad y selfies con almacenamiento encriptado."
     },
     {
         title: "ChronoWar: Card Combat Arena",
         tech: "NestJS, React 19, TypeORM, MySQL, Styled Components, RxJS",
         image: "/projects-showcase/chronowar.png",
         description:
-            "Juego de estrategia de cartas Full-Stack. Implementación de una arquitectura escalable con NestJS para la lógica de servidor y persistencia, junto a un frontend reactivo en React 19 que utiliza Styled Components para una experiencia visual premium y mecánicas de combate basadas en estados complejos."
+            "Plataforma de combate táctico de cartas. Utiliza una arquitectura reactiva basada en RxJS para el manejo de eventos de combate y NestJS para garantizar la consistencia en el backend. El frontend aprovecha las últimas capacidades de React 19 para renderizado ultra-rápido y una experiencia de usuario fluida."
     },
     {
-        title: "Algoritmos de Trading & Motores de Decisión (MT4 – MQL4)",
-        tech: "MQL4, C++",
+        title: "Algoritmos de Trading (MT4 – MQL4)",
+        tech: "MQL4, C++, Lógica Matemática",
         image: "/projects-showcase/trading-bot.png",
         description:
-            "Desarrollo de sistemas de trading cuantitativo basados en lógica matemática y gestión de riesgo. Implementación de bots con trailing stop, cobertura (hedging) y control multicuenta con una arquitectura de alta fiabilidad."
+            "Sistemas de trading cuantitativo de nivel institucional. Implementación de algoritmos de cobertura (hedging), monitoreo de spreads dinámicos en tiempo real y protección de equidad. Diseñados para operar de forma autónoma bajo condiciones de mercado de alta volatilidad con latencia mínima."
     }
 ];
+

@@ -1,13 +1,13 @@
 export default function Skills() {
     const skillGroups = [
-        { title: "Lenguajes", items: ["JavaScript (ES6+)", "TypeScript", "PHP", "MQL4", "HTML5", "CSS3"] },
-        { title: "Backend & Cloud", items: ["NestJS", "Node.js (Express)", "Prisma", "TypeORM", "GitHub Actions", "Vercel", "Meta WhatsApp Cloud API", "Gmail API"] },
-        { title: "Inteligencia Artificial", items: ["Google Gemini Pro", "Agentes Autónomos", "Generación de Reglas con IA"] },
-        { title: "Bases de Datos", items: ["PostgreSQL", "MongoDB Atlas", "MySQL", "SQL Server"] },
-        { title: "Frontend & UI", items: ["React 19", "Zustand", "TanStack Query", "Styled Components", "Tailwind CSS", "Vite"] },
-        { title: "Mobile", items: ["Flutter", "Android Studio"] },
-        { title: "Herramientas & Patrones", items: ["Zod", "JWT", "OAuth2", "Helmet", "Express Rate Limit", "RxJS", "Git", "PDF.js"] }
+        { title: "Lenguajes & Core", items: ["JavaScript (ES15+)", "TypeScript", "Python", "MQL4", "PHP", "HTML5/CSS3"] },
+        { title: "IA & Automatización", items: ["AI Orchestration", "Google Gemini Pro", "Agentes Autónomos", "LLM Fine-tuning (Prompts)", "Validación Lógica con IA"] },
+        { title: "Arquitectura Backend", items: ["Node.js (NestJS/Express)", "Prisma ORM", "TypeORM", "PostgreSQL", "MongoDB Atlas", "Bases de Datos Vectoriales"] },
+        { title: "Frontend de Altas Prestaciones", items: ["React 19", "TanStack Query v5", "Zustand (State Management)", "Zod (Validation)", "Styled Components", "Tailwind CSS"] },
+        { title: "Cloud & DevOps", items: ["GitHub Actions (CI/CD)", "Vercel", "Docker", "Meta WhatsApp API", "Gmail API", "OAuth2/OpenID"] },
+        { title: "Herramientas de Ingeniería", items: ["Git", "RxJS", "Postman", "JWT Security", "Rate Limiting", "Helmet Security", "Swagger/OpenAPI"] }
     ];
+
 
     return (
         <section id="skills">

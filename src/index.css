@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
   --bg-primary: #0f172a;
   --bg-secondary: #1e293b;
@@ -25,9 +30,16 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   background-image:
-    radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.1) 0, transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(129, 140, 248, 0.1) 0, transparent 50%);
+    radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.08) 0, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(129, 140, 248, 0.08) 0, transparent 40%);
+  overflow-x: hidden;
 }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 h1,
 h2,
@@ -73,7 +85,9 @@ section {
   padding: 4rem 1rem;
   max-width: 900px;
   margin: 0 auto;
+  animation: fadeInUp 0.8s ease-out forwards;
 }
+
 
 .card {
   background: var(--glass);
@@ -81,15 +95,16 @@ section {
   border: 1px solid var(--glass-border);
   border-radius: 1rem;
   padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin-bottom: 2rem;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--glow);
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), var(--glow);
   border-color: var(--accent-primary);
 }
+
 
 ul {
   list-style: none;
