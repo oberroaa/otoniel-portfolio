@@ -26,13 +26,13 @@ export const projects = [
     {
         es: {
             title: "ChronoWar: Card Combat Arena",
-            description: "Plataforma de combate táctico de cartas. Utiliza una arquitectura reactiva basada en RxJS para el manejo de eventos de combate y NestJS para garantizar la consistencia en el backend. El frontend aprovecha las últimas capacidades de React 19 para renderizado ultra-rápido y una experiencia de usuario fluida."
+            description: "Plataforma de juego de estrategia táctico con sistema de formaciones en tiempo real. Arquitectura reactiva con RxJS para eventos de combate, sistema de razas con paletas de colores dinámicas y un panel de formación completamente responsive con drag-and-drop de unidades. Backend escalable con Supabase como capa de datos en tiempo real."
         },
         en: {
             title: "ChronoWar: Card Combat Arena",
-            description: "Tactical card combat platform. Uses a reactive architecture based on RxJS for combat event handling and NestJS to ensure backend consistency. The frontend leverages React 19's latest capabilities for ultra-fast rendering and a seamless user experience."
+            description: "Tactical strategy game platform with a real-time formation system. Reactive architecture with RxJS for combat events, race-based dynamic color theming, and a fully responsive unit formation panel. Scalable backend with Supabase as the real-time data layer."
         },
-        tech: "NestJS, React 19, TypeORM, MySQL, Styled Components, RxJS",
+        tech: "NestJS, React 19, TypeORM, MySQL, Supabase, PostgreSQL, Styled Components, RxJS, TypeScript",
         image: "/projects-showcase/chronowar.png"
     },
     {
