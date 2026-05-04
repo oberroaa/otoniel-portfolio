@@ -1,0 +1,94 @@
+{
+  "header": {
+    "badge": "Available for new projects",
+    "title": "Software Engineer – Backend, Automation & AI Systems",
+    "description": "Computer Engineer with over 12 years of experience. Specialized in designing robust architectures, industrial process automation, and autonomous agent development.",
+    "profileTitle": "Professional Profile",
+    "profileDesc": "My primary focus is robust business logic, system stability, and operational efficiency. I am an expert in transforming unstructured data into operational insights using complex rule engines.",
+    "spec": "Specialization",
+    "specDesc": "Autonomous agents, Big Data, and Cloud Orchestration.",
+    "location": "Miami, FL"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "role": "Independent Software Engineer",
+    "period": "2012 – Present",
+    "summary": "Development of customized technical solutions focused on workflow optimization and intelligent automation.",
+    "items": [
+      {
+        "title": "AI Agent Orchestration",
+        "desc": "Designing autonomous workflows integrating LLMs (Gemini) with industrial APIs for data-driven decision making."
+      },
+      {
+        "title": "Mission-Critical Systems",
+        "desc": "Development of logic validation engines for industrial processes and financial platforms (ICO/KYC) with high availability."
+      },
+      {
+        "title": "Data Architectures",
+        "desc": "Modeling scalable relational and non-relational databases, optimized for complex queries and real-time auditing."
+      },
+      {
+        "title": "Full-Cycle Engineering",
+        "desc": "Technical leadership across the software lifecycle, from conceptualization to deployment automation (CI/CD)."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects & Innovation",
+    "evolutionTitle": "Portfolio Technological Evolution",
+    "evolutionDesc1": "This portfolio reflects my mastery in Full-Stack development and Artificial Intelligence integration.",
+    "evolutionDesc2": "I use React 19 with Vite for ultra-fast interfaces, complemented by Node.js and NestJS on the backend for robust and scalable business logic.",
+    "evolutionDesc3": "I've integrated Google Gemini AI for complex data processing automation and WhatsApp Meta API for real-time notifications.",
+    "newImplementations": "New Implementations",
+    "items": [
+      {
+        "title": "Tuuci Agent: Industrial AI Automation",
+        "description": "Enterprise-grade intelligent industrial orchestration ecosystem. Implements an AI-powered vision and extraction engine to transform complex PDF orders into operational data with 100% precision. Features a 'Multi-layer Logic Validation' system and real-time notifications via Official WhatsApp.",
+        "tech": "Node.js, Google Gemini Pro, Meta WhatsApp Cloud API, Gmail API, MongoDB, React 19, Framer Motion"
+      },
+      {
+        "title": "Tokenization & Crowdfunding Platform",
+        "description": "High-availability financial infrastructure for token presales. Designed under 'Security-First' principles with schema validation using Zod and complex state management. Includes an automated KYC flow with encrypted storage.",
+        "tech": "Express, Prisma ORM, PostgreSQL, Zod, TanStack Query, Zustand, JWT"
+      },
+      {
+        "title": "ChronoWar: Card Combat Arena",
+        "description": "Tactical strategy game platform with a real-time formation system. Reactive architecture with RxJS for combat events and a fully responsive unit formation panel with drag-and-drop of units.",
+        "tech": "NestJS, React 19, TypeORM, MySQL, Supabase, RxJS, TypeScript"
+      },
+      {
+        "title": "Trading Algorithms (MT4 – MQL4)",
+        "description": "Institutional-level quantitative trading systems. Implementation of hedging algorithms, real-time dynamic spread monitoring, and equity protection to operate under high volatility.",
+        "tech": "MQL4, C++, Mathematical Logic"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "backend": "Backend Architecture",
+    "frontend": "Frontend Development",
+    "devops": "Infrastructure & DevOps",
+    "ai": "AI & Automation"
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Computer Engineering",
+    "university": "University of Informatics Sciences (UCI)",
+    "graduated": "Graduated in 2012"
+  },
+  "languages": {
+    "title": "Languages",
+    "spanish": "Spanish",
+    "native": "Native",
+    "english": "English",
+    "basic": "Basic / Technical"
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "desc": "I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+    "emailBtn": "Send Email"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

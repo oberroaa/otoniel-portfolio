@@ -1,13 +1,23 @@
 import React from 'react';
 import { useLanguage } from "../context/LanguageContext";
+import { Heart } from "lucide-react";
 
 export default function Footer() {
-    const { language } = useLanguage();
+    const { t } = useLanguage();
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer style={{ textAlign: "center", padding: "4rem 0", color: "var(--text-muted)", fontSize: "0.875rem" }}>
-            © {currentYear} Otoniel Berroa Arias • Miami, FL
+        <footer className="footer-main">
+            <div className="footer-content">
+                <span>© {currentYear} Otoniel Berroa</span>
+                <span className="footer-divider">•</span>
+                <span>{t.header.location}</span>
+                <span className="footer-divider">•</span>
+                <span className="made-with">
+                    {t.footer.rights}
+                    <Heart className="w-3 h-3 text-red-500 ml-1 inline" />
+                </span>
+            </div>
         </footer>
     );
 }

@@ -1,91 +1,130 @@
 import { useLanguage } from "../context/LanguageContext";
+import { motion } from "framer-motion";
+import { 
+    Mail, 
+    ExternalLink, 
+    Code2, 
+    MapPin, 
+    Terminal, 
+    Cpu, 
+    Globe, 
+    Languages,
+    Sparkles
+} from "lucide-react";
 
 export default function Header() {
-    const { language, toggleLanguage, t } = useLanguage();
+    const { language, toggleLanguage, t: dictionary } = useLanguage();
+    const t = dictionary.header;
 
-    const translations = {
-        badge: {
-            es: "Disponible para nuevos proyectos",
-            en: "Available for new projects"
-        },
-        title: {
-            es: "Ingeniero de Software – Backend, Automatización & Sistemas IA",
-            en: "Software Engineer – Backend, Automation & AI Systems"
-        },
-        description: {
-            es: "Ingeniero Informático con más de 12 años de experiencia. Especializado en el diseño de arquitecturas robustas, automatización de procesos industriales y desarrollo de agentes autónomos.",
-            en: "Computer Engineer with over 12 years of experience. Specialized in designing robust architectures, industrial process automation, and autonomous agent development."
-        },
-        profileTitle: {
-            es: "Perfil Profesional",
-            en: "Professional Profile"
-        },
-        profileDesc: {
-            es: "Mi enfoque principal es la lógica de negocio robusta, la estabilidad del sistema y la eficiencia operativa. Soy experto en transformar datos no estructurados en información operativa mediante motores de reglas complejos.",
-            en: "My primary focus is robust business logic, system stability, and operational efficiency. I am an expert in transforming unstructured data into operational insights using complex rule engines."
-        },
-        spec: {
-            es: "Especialización",
-            en: "Specialization"
-        },
-        specDesc: {
-            es: "Agentes autónomos, Big Data y Cloud Orchestration.",
-            en: "Autonomous agents, Big Data, and Cloud Orchestration."
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.15
+            }
         }
     };
 
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 }
+    };
+
     return (
-        <section className="hero">
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "2rem" }}>
-                <span className="pill">{t(translations.badge)}</span>
+        <motion.section 
+            className="hero"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+        >
+            <motion.div 
+                variants={itemVariants}
+                className="header-top"
+                style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2.5rem" }}
+            >
+                <span className="pill" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <Sparkles className="w-3 h-3 text-emerald-400" />
+                    {t.badge}
+                </span>
                 <button 
                     onClick={toggleLanguage}
-                    className="pill"
-                    style={{ 
-                        cursor: "pointer", 
-                        background: "var(--glass)", 
-                        border: "1px solid var(--accent-primary)",
-                        color: "var(--accent-primary)",
-                        fontWeight: "600",
-                        padding: "0.5rem 1rem"
-                    }}
+                    className="lang-toggle"
                 >
-                    {language === 'es' ? '🇺🇸 EN' : '🇪🇸 ES'}
+                    <Languages className="w-4 h-4" />
+                    {language === 'es' ? 'English' : 'Español'}
                 </button>
-            </div>
-            <h1>OTONIEL BERROA</h1>
-            <h2>{t(translations.title)}</h2>
+            </motion.div>
 
-            <p style={{ fontSize: "1.1rem", color: "var(--text-muted)", maxWidth: "700px", margin: "1.5rem 0 2rem 0" }}>
-                {t(translations.description)}
-            </p>
+            <motion.div 
+                className="header-content-wrapper"
+                variants={itemVariants}
+                style={{ display: "flex", gap: "2.5rem", alignItems: "center", flexWrap: "wrap" }}
+            >
+                <motion.div 
+                    className="profile-image-container"
+                    whileHover={{ scale: 1.05, rotate: 2 }}
+                >
+                    <img src="/profile.jpg" alt="Otoniel Berroa" className="profile-image" />
+                    <div className="profile-status-dot"></div>
+                </motion.div>
 
-            <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", alignItems: "center" }}>
-                <a href="mailto:oberroaa@gmail.com" className="card" style={{ padding: "0.75rem 1.5rem", marginBottom: 0 }}>
-                    📧 oberroaa@gmail.com
+                <div className="header-text">
+                    <motion.h1 variants={itemVariants} style={{ margin: 0 }}>{dictionary.meta?.name || "OTONIEL BERROA"}</motion.h1>
+                    <motion.h2 variants={itemVariants}>{t.title}</motion.h2>
+                </div>
+            </motion.div>
+
+            <motion.p 
+                variants={itemVariants}
+                className="hero-description"
+            >
+                {t.description}
+            </motion.p>
+
+            <motion.div variants={itemVariants} className="contact-links">
+                <a href="mailto:oberroaa@gmail.com" className="contact-pill main">
+                    <Mail className="w-4 h-4" />
+                    oberroaa@gmail.com
                 </a>
-                <div style={{ display: "flex", gap: "1rem" }}>
-                    <a href="https://linkedin.com/in/otoniel-berroa" target="_blank" rel="noopener noreferrer" style={{ opacity: 0.8 }}>LinkedIn</a>
-                    <a href="https://github.com/oberroaa" target="_blank" rel="noopener noreferrer" style={{ opacity: 0.8 }}>GitHub</a>
-                    <span style={{ color: "var(--text-muted)" }}>📍 Miami, FL</span>
+                <div className="social-group">
+                    <a href="https://linkedin.com/in/otoniel-berroa" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <ExternalLink className="w-5 h-5" />
+                    </a>
+                    <a href="https://github.com/oberroaa" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <Code2 className="w-5 h-5" />
+                    </a>
+                    <span className="location">
+                        <MapPin className="w-4 h-4" />
+                        {t.location}
+                    </span>
                 </div>
-            </div>
+            </motion.div>
 
-            <div style={{ marginTop: "4rem" }} className="card">
-                <h3>{t(translations.profileTitle)}</h3>
-                <p>{t(translations.profileDesc)}</p>
-                <div className="grid" style={{ marginTop: "1.5rem" }}>
-                    <div>
-                        <strong style={{ color: "var(--accent-primary)" }}>{t(translations.spec)}</strong>
-                        <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>{t(translations.specDesc)}</p>
+            <motion.div variants={itemVariants} className="card profile-card" style={{ marginTop: "4rem" }}>
+                <h3>
+                    <Terminal className="w-6 h-6 text-indigo-400" />
+                    {t.profileTitle}
+                </h3>
+                <p className="profile-text">{t.profileDesc}</p>
+                <div className="grid spec-grid" style={{ marginTop: "2rem" }}>
+                    <div className="spec-item">
+                        <div className="spec-header">
+                            <Cpu className="w-5 h-5 text-sky-400" />
+                            <strong>{t.spec}</strong>
+                        </div>
+                        <p>{t.specDesc}</p>
                     </div>
-                    <div>
-                        <strong style={{ color: "var(--accent-primary)" }}>Backend</strong>
-                        <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>NestJS, Node.js (ESM), PHP (Symfony/Laravel), Escalabilidad.</p>
+                    <div className="spec-item">
+                        <div className="spec-header">
+                            <Globe className="w-5 h-5 text-emerald-400" />
+                            <strong>Backend</strong>
+                        </div>
+                        <p>NestJS, Node.js (ESM), PHP (Symfony/Laravel), Escalabilidad.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     );
 }
 

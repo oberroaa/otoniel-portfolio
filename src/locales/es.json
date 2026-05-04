@@ -1,0 +1,94 @@
+{
+  "header": {
+    "badge": "Disponible para nuevos proyectos",
+    "title": "Ingeniero de Software – Backend, Automatización & Sistemas IA",
+    "description": "Ingeniero Informático con más de 12 años de experiencia. Especializado en el diseño de arquitecturas robustas, automatización de procesos industriales y desarrollo de agentes autónomos.",
+    "profileTitle": "Perfil Profesional",
+    "profileDesc": "Mi enfoque principal es la lógica de negocio robusta, la estabilidad del sistema y la eficiencia operativa. Soy experto en transformar datos no estructurados en información operativa mediante motores de reglas complejos.",
+    "spec": "Especialización",
+    "specDesc": "Agentes autónomos, Big Data y Cloud Orchestration.",
+    "location": "Miami, FL"
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "role": "Ingeniero de Software Independiente",
+    "period": "2012 – Presente",
+    "summary": "Desarrollo de soluciones técnicas personalizadas enfocadas en la optimización de flujos de trabajo y la automatización inteligente.",
+    "items": [
+      {
+        "title": "Orquestación de Agentes IA",
+        "desc": "Diseño de flujos de trabajo autónomos que integran LLMs (Gemini) con APIs industriales para la toma de decisiones basada en datos."
+      },
+      {
+        "title": "Sistemas de Misión Crítica",
+        "desc": "Desarrollo de motores de validación lógica para procesos industriales y plataformas financieras (ICO/KYC) con alta disponibilidad."
+      },
+      {
+        "title": "Arquitecturas de Datos",
+        "desc": "Modelado de bases de datos relacionales y no relacionales escalables, optimizadas para consultas complejas y auditoría en tiempo real."
+      },
+      {
+        "title": "Ingeniería Full-Cycle",
+        "desc": "Liderazgo técnico en todo el ciclo de vida del software, desde la conceptualización hasta la automatización de despliegues (CI/CD)."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos & Innovación",
+    "evolutionTitle": "Evolución Tecnológica del Portfolio",
+    "evolutionDesc1": "Este portfolio refleja mi dominio en el desarrollo Full-Stack y la integración de Inteligencia Artificial.",
+    "evolutionDesc2": "Utilizo React 19 con Vite para interfaces ultrarrápidas, complementado con Node.js y NestJS en el backend para una lógica de negocio robusta y escalable.",
+    "evolutionDesc3": "He integrado Google Gemini AI para la automatización de procesamiento de datos complejos y WhatsApp Meta API para notificaciones en tiempo real.",
+    "newImplementations": "Nuevas Implementaciones",
+    "items": [
+      {
+        "title": "Tuuci Agent: Automatización Industrial IA",
+        "description": "Ecosistema inteligente de orquestación industrial de nivel empresarial. Implementa un motor de extracción basado en visión e IA para transformar pedidos PDF complejos en datos operativos con 100% de precisión. Cuenta con un sistema de 'Validación Lógica Multicapa' y notificaciones en tiempo real vía WhatsApp Oficial.",
+        "tech": "Node.js, Google Gemini Pro, Meta WhatsApp Cloud API, Gmail API, MongoDB, React 19, Framer Motion"
+      },
+      {
+        "title": "Plataforma de Tokenización & Crowdfunding",
+        "description": "Infraestructura financiera de alta disponibilidad para preventa de tokens. Diseñada bajo principios de 'Security-First' con validación de esquemas mediante Zod y gestión de estados complejos. Incluye un flujo de KYC automatizado con almacenamiento encriptado.",
+        "tech": "Express, Prisma ORM, PostgreSQL, Zod, TanStack Query, Zustand, JWT"
+      },
+      {
+        "title": "ChronoWar: Card Combat Arena",
+        "description": "Plataforma de juego de estrategia táctico con sistema de formaciones en tiempo real. Arquitectura reactiva con RxJS para eventos de combate y un panel de formación completamente responsive con drag-and-drop de unidades.",
+        "tech": "NestJS, React 19, TypeORM, MySQL, Supabase, RxJS, TypeScript"
+      },
+      {
+        "title": "Algoritmos de Trading (MT4 – MQL4)",
+        "description": "Sistemas de trading cuantitativo de nivel institucional. Implementación de algoritmos de cobertura (hedging), monitoreo de spreads dinámicos y protección de equidad para operar bajo alta volatilidad.",
+        "tech": "MQL4, C++, Lógica Matemática"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "backend": "Arquitectura Backend",
+    "frontend": "Desarrollo Frontend",
+    "devops": "Infraestructura & DevOps",
+    "ai": "IA & Automatización"
+  },
+  "education": {
+    "title": "Educación",
+    "degree": "Ingeniería Informática",
+    "university": "Universidad de las Ciencias Informáticas (UCI)",
+    "graduated": "Graduado en 2012"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "spanish": "Español",
+    "native": "Nativo",
+    "english": "Inglés",
+    "basic": "Básico / Técnico"
+  },
+  "contact": {
+    "title": "¿Hablamos?",
+    "desc": "Estoy siempre abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones.",
+    "emailBtn": "Enviar Email"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

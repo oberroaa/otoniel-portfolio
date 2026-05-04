@@ -1,59 +1,113 @@
 import { useLanguage } from "../context/LanguageContext";
-import { projects } from "../data/projects";
+import { motion } from "framer-motion";
+import { 
+    Briefcase, 
+    ExternalLink, 
+    Code2, 
+    Rocket,
+    CheckCircle2
+} from "lucide-react";
 import Carousel from "./Carousel";
 
-export default function Projects() {
-    const { t } = useLanguage();
-    const projectImages = projects.map(p => p.image);
+// Keep images mapping if needed, but for now we'll use what's in JSON for text
+const projectImages = [
+    "/projects-showcase/gmail-pdf-agent.png",
+    "/projects-showcase/ico-platform.png",
+    "/projects-showcase/chronowar.png",
+    "/projects-showcase/trading-bot.png"
+];
 
-    const translations = {
-        title: { es: "Proyectos & Innovación", en: "Projects & Innovation" },
-        evolutionTitle: { es: "Evolución Tecnológica del Portfolio", en: "Portfolio Technological Evolution" },
-        evolutionDesc1: { 
-            es: "Este portfolio refleja mi dominio en el desarrollo Full-Stack y la integración de Inteligencia Artificial.",
-            en: "This portfolio reflects my mastery in Full-Stack development and Artificial Intelligence integration."
-        },
-        evolutionDesc2: { 
-            es: "Utilizo React 19 con Vite para interfaces ultrarrápidas, complementado con Node.js y NestJS en el backend para una lógica de negocio robusta y escalable.",
-            en: "I use React 19 with Vite for ultra-fast interfaces, complemented by Node.js and NestJS on the backend for robust and scalable business logic."
-        },
-        evolutionDesc3: { 
-            es: "He integrado Google Gemini AI para la automatización de procesamiento de datos complejos y WhatsApp Meta API para notificaciones en tiempo real.",
-            en: "I've integrated Google Gemini AI for complex data processing automation and WhatsApp Meta API for real-time notifications."
-        },
-        newImplementations: { es: "Nuevas Implementaciones", en: "New Implementations" }
+export default function Projects() {
+    const { t: dictionary } = useLanguage();
+    const t = dictionary.projects;
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.2 }
+        }
+    };
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } }
     };
 
     return (
         <section id="projects">
-            <h3>{t(translations.title)}</h3>
+            <motion.h3 
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+            >
+                <Briefcase className="w-6 h-6 text-indigo-400" />
+                {t.title}
+            </motion.h3>
 
             <Carousel images={projectImages} />
 
-            <div className="tech-explanation">
-                <h4 style={{ color: 'var(--accent-primary)', marginBottom: '1rem' }}>{t(translations.evolutionTitle)}</h4>
+            <motion.div 
+                className="tech-explanation"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+            >
+                <h4 style={{ color: 'var(--accent-primary)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <Rocket className="w-5 h-5" />
+                    {t.evolutionTitle}
+                </h4>
                 <p>
-                    {t(translations.evolutionDesc1)} 
-                    {t(translations.evolutionDesc2)}
+                    {t.evolutionDesc1} 
+                    {t.evolutionDesc2}
                 </p>
                 <p style={{ marginTop: '1rem' }}>
-                    <strong>{t(translations.newImplementations)}:</strong> {t(translations.evolutionDesc3)}
+                    <strong style={{ color: 'var(--accent-primary)' }}>{t.newImplementations}:</strong> {t.evolutionDesc3}
                 </p>
-            </div>
+            </motion.div>
 
-            <div className="grid">
-                {projects.map((p, i) => (
-                    <div key={i} className="card" style={{ display: "flex", flexDirection: "column" }}>
-                        <h4 style={{ marginBottom: "0.5rem", color: "var(--accent-primary)" }}>{t(p).title}</h4>
-                        <div style={{ marginBottom: "1rem" }}>
-                            {p.tech.split(',').map((t_item, idx) => (
-                                <span key={idx} className="pill" style={{ fontSize: "0.7rem" }}>{t_item.trim()}</span>
+            <motion.div 
+                className="grid"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+            >
+                {t.items.map((p, i) => (
+                    <motion.div 
+                        key={i} 
+                        className={`card project-card ${i === 0 ? 'featured' : ''}`}
+                        variants={cardVariants}
+                        whileHover={{ y: -10 }}
+                    >
+                        {i === 0 && (
+                            <div className="featured-badge">
+                                <CheckCircle2 className="w-3 h-3" />
+                                Flagship Project
+                            </div>
+                        )}
+                        <div className="project-header">
+                            <h4>{p.title}</h4>
+                            <Code2 className="w-5 h-5 text-indigo-400/50" />
+                        </div>
+                        
+                        <div className="tech-pills">
+                            {p.tech.split(',').map((tech, idx) => (
+                                <span key={idx} className="pill-small">{tech.trim()}</span>
                             ))}
                         </div>
-                        <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", flex: 1 }}>{t(p).description}</p>
-                    </div>
+                        
+                        <p className="project-desc">{p.description}</p>
+                        
+                        <div className="project-footer">
+                            <span className="view-more">
+                                {dictionary.language === 'es' ? 'Ver Detalles' : 'View Details'}
+                                <ExternalLink className="w-3 h-3 ml-1" />
+                            </span>
+                        </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </section>
     );
 }

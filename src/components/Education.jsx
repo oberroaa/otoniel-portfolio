@@ -1,23 +1,32 @@
 import { useLanguage } from "../context/LanguageContext";
+import { motion } from "framer-motion";
+import { GraduationCap } from "lucide-react";
 
 export default function Education() {
-    const { t } = useLanguage();
-
-    const translations = {
-        title: { es: "Educación", en: "Education" },
-        degree: { es: "Ingeniería Informática", en: "Computer Engineering" },
-        university: { es: "Universidad de las Ciencias Informáticas (UCI)", en: "University of Informatics Sciences (UCI)" },
-        graduated: { es: "Graduado en 2012", en: "Graduated in 2012" }
-    };
+    const { t: dictionary } = useLanguage();
+    const t = dictionary.education;
 
     return (
         <section id="education">
-            <h3>{t(translations.title)}</h3>
-            <div className="card">
-                <h4 style={{ color: "var(--accent-primary)", marginBottom: "0.5rem" }}>{t(translations.degree)}</h4>
-                <p style={{ fontWeight: 600 }}>{t(translations.university)}</p>
-                <p style={{ color: "var(--text-muted)" }}>{t(translations.graduated)}</p>
-            </div>
+            <motion.h3
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+            >
+                <GraduationCap className="w-6 h-6 text-indigo-400" />
+                {t.title}
+            </motion.h3>
+            <motion.div 
+                className="card education-card"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+            >
+                <h4 className="degree-title">{t.degree}</h4>
+                <p className="university-name">{t.university}</p>
+                <p className="grad-date">{t.graduated}</p>
+            </motion.div>
         </section>
     );
 }

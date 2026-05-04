@@ -7,11 +7,17 @@ import Education from "./components/Education";
 import Languages from "./components/Languages";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <LanguageProvider>
-      <div className="app-container">
+      <motion.div 
+        className="app-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <Header />
         <Experience />
         <Projects />
@@ -20,7 +26,7 @@ function App() {
         <Languages />
         <Contact />
         <Footer />
-      </div>
+      </motion.div>
     </LanguageProvider>
   );
 }
