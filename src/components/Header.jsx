@@ -39,65 +39,56 @@ export default function Header() {
             animate="visible"
         >
             <motion.div 
+                className="header-main-grid"
                 variants={itemVariants}
-                className="header-top"
-                style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2.5rem" }}
-            >
-                <span className="pill" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Sparkles className="w-3 h-3 text-emerald-400" />
-                    {t.badge}
-                </span>
-                <button 
-                    onClick={toggleLanguage}
-                    className="lang-toggle"
-                >
-                    <Languages className="w-4 h-4" />
-                    {language === 'es' ? 'English' : 'Español'}
-                </button>
-            </motion.div>
-
-            <motion.div 
-                className="header-content-wrapper"
-                variants={itemVariants}
-                style={{ display: "flex", gap: "2.5rem", alignItems: "center", flexWrap: "wrap" }}
             >
                 <motion.div 
-                    className="profile-image-container"
-                    whileHover={{ scale: 1.05, rotate: 2 }}
+                    className="profile-box"
+                    whileHover={{ scale: 1.02 }}
                 >
-                    <img src="/profile.jpg" alt="Otoniel Berroa" className="profile-image" />
-                    <div className="profile-status-dot"></div>
+                    <div className="profile-image-wrapper">
+                        <img src="/profile.jpg" alt="Otoniel Berroa" className="profile-img-main" />
+                        <div className="status-indicator"></div>
+                    </div>
                 </motion.div>
 
-                <div className="header-text">
-                    <motion.h1 variants={itemVariants} style={{ margin: 0 }}>{dictionary.meta?.name || "OTONIEL BERROA"}</motion.h1>
-                    <motion.h2 variants={itemVariants}>{t.title}</motion.h2>
+                <div className="profile-info">
+                    <motion.h1 variants={itemVariants} className="name-title">
+                        {dictionary.meta?.name || "OTONIEL BERROA"}
+                    </motion.h1>
+                    
+                    <motion.div variants={itemVariants} className="role-badges">
+                        {t.roles.map((role, i) => (
+                            <span key={i} className="role-tag">{role}</span>
+                        ))}
+                    </motion.div>
+
+                    <motion.h2 variants={itemVariants} className="main-role-title">
+                        {t.title}
+                    </motion.h2>
+
+                    <motion.p variants={itemVariants} className="hero-bio">
+                        {t.description}
+                    </motion.p>
                 </div>
             </motion.div>
 
-            <motion.p 
-                variants={itemVariants}
-                className="hero-description"
-            >
-                {t.description}
-            </motion.p>
-
-            <motion.div variants={itemVariants} className="contact-links">
-                <a href="mailto:oberroaa@gmail.com" className="contact-pill main">
+            <motion.div variants={itemVariants} className="action-bar">
+                <a href="mailto:oberroaa@gmail.com" className="action-btn email">
                     <Mail className="w-4 h-4" />
-                    oberroaa@gmail.com
+                    <span>oberroaa@gmail.com</span>
                 </a>
-                <div className="social-group">
-                    <a href="https://linkedin.com/in/otoniel-berroa" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <div className="social-links-group">
+                    <a href="https://linkedin.com/in/otoniel-berroa" target="_blank" rel="noopener noreferrer" className="icon-link">
                         <ExternalLink className="w-5 h-5" />
                     </a>
-                    <a href="https://github.com/oberroaa" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <a href="https://github.com/oberroaa" target="_blank" rel="noopener noreferrer" className="icon-link">
                         <Code2 className="w-5 h-5" />
                     </a>
-                    <span className="location">
+                    <div className="loc-tag">
                         <MapPin className="w-4 h-4" />
                         {t.location}
-                    </span>
+                    </div>
                 </div>
             </motion.div>
 
