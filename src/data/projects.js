@@ -26,27 +26,25 @@ export const projects = [
     {
         es: {
             title: "ChronoWar: Card Combat Arena",
-            description: "Plataforma de juego de estrategia táctico con sistema de formaciones en tiempo real. Arquitectura reactiva con RxJS para eventos de combate, sistema de razas con paletas de colores dinámicas y un panel de formación completamente responsive con drag-and-drop de unidades. Backend escalable con Supabase como capa de datos en tiempo real."
+            description: "Juego de estrategia táctico con motor de combate Match-3 completo: tablero 8×8 con 4 razas, sistema de cascadas y combos con multiplicadores dinámicos, IA enemiga con evaluación de movimientos ponderada por raza, sistema de habilidades dinámicas cargadas desde JSON, mecánicas de veneno/escudo/curación, y arquitectura modular con lógica de combate separada en utilidades reutilizables."
         },
         en: {
             title: "ChronoWar: Card Combat Arena",
-            description: "Tactical strategy game platform with a real-time formation system. Reactive architecture with RxJS for combat events, race-based dynamic color theming, and a fully responsive unit formation panel. Scalable backend with Supabase as the real-time data layer."
+            description: "Tactical strategy game featuring a full Match-3 combat engine: 8×8 board with 4 races, cascade and combo system with dynamic multipliers, AI opponent with race-weighted move evaluation, dynamic hero skill system loaded from JSON data, poison/shield/healing mechanics, and modular architecture with combat logic separated into reusable utility modules."
         },
-        tech: "NestJS, React 19, TypeORM, MySQL, Supabase, PostgreSQL, Styled Components, RxJS, TypeScript",
+        tech: "React 19, TypeScript, Styled Components, Vite, Node.js, NestJS, TypeORM, MySQL, Supabase, Framer Motion",
         image: "/projects-showcase/chronowar.png"
     },
     {
         es: {
             title: "Algoritmos de Trading (MT4 – MQL4)",
-            description: "Sistemas de trading cuantitativo de nivel institucional. Implementación de algoritmos de cobertura (hedging), monitoreo de spreads dinámicos en tiempo real y protección de equidad. Diseñados para operar de forma autónoma bajo condiciones de mercado de alta volatilidad con latencia mínima."
+            description: "Sistemas de trading cuantitativo de nivel institucional. Implementa cobertura (hedging), monitoreo dinámico de spreads y protección de equidad, con gestión de riesgo avanzada: objetivo de beneficio, trailing stop, y mapa de tickets para optimizar cierres. Evalúa múltiples indicadores (EMA, MACD, RSI, Ichimoku, Bollinger, ZigZag) y utiliza IA para señalizar compras/ventas. Diseñado para operar autónomamente en mercados de alta volatilidad con latencia mínima."
         },
         en: {
             title: "Trading Algorithms (MT4 – MQL4)",
-            description: "Institutional-level quantitative trading systems. Implementation of hedging algorithms, real-time dynamic spread monitoring, and equity protection. Designed to operate autonomously under high-volatility market conditions with minimal latency."
+            description: "Institutional-level quantitative trading systems. Implements hedging, real-time spread monitoring, advanced risk management (target profit, trailing stop, ticket map), and evaluates multiple indicators (EMA, MACD, RSI, Ichimoku, Bollinger, ZigZag) with AI-driven signal generation. Designed for autonomous operation in high-volatility markets with minimal latency."
         },
-        tech: "MQL4, C++, Lógica Matemática",
+        tech: "MQL4, C++, MetaTrader 4, Advanced Risk Management, Multi-Indicator Analysis",
         image: "/projects-showcase/trading-bot.png"
     }
 ];
-
-

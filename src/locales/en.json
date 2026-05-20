@@ -54,13 +54,13 @@
       },
       {
         "title": "ChronoWar: Card Combat Arena",
-        "description": "Tactical strategy game platform with a real-time formation system. Reactive architecture with RxJS for combat events and a fully responsive unit formation panel with drag-and-drop of units.",
-        "tech": "NestJS, React 19, TypeORM, MySQL, Supabase, RxJS, TypeScript"
+        "description": "Tactical strategy game featuring a full Match-3 combat engine: 8×8 board with 4 races, cascade and combo system with dynamic multipliers, AI opponent with race-weighted move evaluation, dynamic hero skill system loaded from JSON data, poison/shield/healing mechanics, and modular architecture with combat logic separated into reusable utility modules.",
+        "tech": "React 19, TypeScript, Styled Components, Vite, Node.js, NestJS, TypeORM, MySQL, Supabase, Framer Motion"
       },
       {
         "title": "Trading Algorithms (MT4 – MQL4)",
-        "description": "Institutional-level quantitative trading systems. Implementation of hedging algorithms, real-time dynamic spread monitoring, and equity protection to operate under high volatility.",
-        "tech": "MQL4, C++, Mathematical Logic"
+        "description": "Institutional-level quantitative trading systems. Implements hedging, dynamic spread monitoring, advanced risk management (target profit, trailing stop, ticket mapping), and evaluates multiple indicators (EMA, MACD, RSI, Ichimoku, Bollinger, ZigZag) with AI-driven signal generation. Designed for autonomous operation in high-volatility markets with minimal latency.",
+        "tech": "MQL4, C++, MetaTrader 4, Advanced Risk Management, Multi-Indicator Analysis"
       }
     ]
   },
