@@ -44,7 +44,7 @@ export const projects = [
             title: "Trading Algorithms (MT4 – MQL4)",
             description: "Institutional-level quantitative trading systems. Implements hedging, real-time spread monitoring, advanced risk management (target profit, trailing stop, ticket map), and evaluates multiple indicators (EMA, MACD, RSI, Ichimoku, Bollinger, ZigZag) with AI-driven signal generation. Designed for autonomous operation in high-volatility markets with minimal latency."
         },
-        tech: "MQL4, C++, MetaTrader 4, Advanced Risk Management, Multi-Indicator Analysis",
+        tech: "MQL4, MetaTrader 4, Advanced Risk Management, Multi-Indicator Analysis",
         image: "/projects-showcase/trading-bot.png"
     }
 ];
