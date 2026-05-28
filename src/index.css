@@ -1104,3 +1104,285 @@ a:hover {
     padding: 0.5rem 1rem;
   }
 }
+
+/* Nav Action Buttons (Print / PDF) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.nav-action-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-primary);
+  transform: scale(1.1);
+}
+
+.nav-action-btn.pdf:hover {
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.1);
+}
+
+/* ============================================================
+   PRINT / SAVE AS PDF STYLES (DEDICATED VIEW)
+   ============================================================ */
+
+/* Hide print view on screen */
+.pv-root {
+  display: none;
+}
+
+@media print {
+  /* Hide standard application */
+  .floating-navbar,
+  .app-container,
+  #root > *:not(.pv-root) {
+    display: none !important;
+  }
+
+  /* Show print view */
+  .pv-root {
+    display: block !important;
+    background: white;
+    color: #1a1a2e;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  /* Reset layout constraints */
+  html, body, #root {
+    background: white !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+  }
+
+  /* ── PRINT VIEW LAYOUT ── */
+  .pv-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 1.5rem;
+  }
+
+  .pv-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .pv-header-info {
+    flex: 1;
+  }
+
+  .pv-name {
+    font-size: 24pt !important;
+    font-weight: 800;
+    margin: 0 0 0.2rem 0 !important;
+    color: #1a1a2e !important;
+    -webkit-text-fill-color: #1a1a2e !important;
+    background: none !important;
+  }
+
+  .pv-role {
+    font-size: 14pt;
+    color: #4f46e5 !important;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .pv-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .pv-tag {
+    background: #e0e7ff !important;
+    color: #3730a3 !important;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-size: 8pt;
+    font-weight: 600;
+  }
+
+  .pv-contacts {
+    display: flex;
+    gap: 1rem;
+    font-size: 9pt;
+    color: #4b5563;
+  }
+
+  .pv-body {
+    display: table;
+    width: 100%;
+  }
+
+  .pv-left {
+    display: table-cell;
+    width: 65%;
+    padding-right: 2rem;
+    vertical-align: top;
+  }
+
+  .pv-right {
+    display: table-cell;
+    width: 35%;
+    vertical-align: top;
+  }
+
+  .pv-section {
+    margin-bottom: 0.75rem;
+  }
+
+  .pv-section-title {
+    font-size: 14pt !important;
+    color: #1a1a2e !important;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.15rem;
+    margin-bottom: 0.4rem !important;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .pv-text {
+    margin: 0 0 0.4rem 0;
+    color: #374151;
+  }
+
+  .pv-italic {
+    font-style: italic;
+    color: #6b7280;
+  }
+
+  /* Experience */
+  .pv-exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.2rem;
+  }
+
+  .pv-exp-role {
+    font-size: 11pt;
+    color: #111827;
+  }
+
+  .pv-period {
+    font-size: 9pt;
+    color: #6b7280;
+  }
+
+  .pv-exp-items {
+    margin-top: 0.5rem;
+  }
+
+  .pv-exp-item {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 0.3rem;
+    font-size: 9pt;
+    break-inside: avoid;
+  }
+
+  .pv-bullet {
+    color: #4f46e5;
+  }
+
+  /* Projects */
+  .pv-project {
+    margin-bottom: 0.8rem;
+    break-inside: avoid;
+  }
+
+  .pv-project-title {
+    display: block;
+    font-size: 11pt;
+    color: #111827;
+    margin-bottom: 0.2rem;
+  }
+
+  .pv-tech {
+    font-size: 8pt;
+    color: #6b7280;
+    margin-top: 0.2rem;
+  }
+
+  /* Skills */
+  .pv-skill-group {
+    margin-bottom: 0.8rem;
+    break-inside: avoid;
+  }
+
+  .pv-skill-label {
+    display: block;
+    font-size: 10pt;
+    margin-bottom: 0.3rem;
+  }
+
+  .pv-skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .pv-pill {
+    background: #f3f4f6 !important;
+    border: 1px solid #d1d5db !important;
+    color: #374151 !important;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-size: 8pt;
+  }
+
+  /* Ed & Lang */
+  .pv-degree {
+    display: block;
+    font-size: 11pt;
+    margin-bottom: 0.2rem;
+  }
+
+  .pv-lang-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    font-size: 10pt;
+  }
+
+  .pv-lang-name {
+    font-weight: 600;
+  }
+}

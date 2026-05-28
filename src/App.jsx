@@ -8,12 +8,14 @@ import Languages from "./components/Languages";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import PrintView from "./components/PrintView";
 import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <LanguageProvider>
       <Navbar />
+      <PrintView />
       <motion.div 
         className="app-container"
         initial={{ opacity: 0 }}

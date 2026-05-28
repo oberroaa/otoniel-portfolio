@@ -6,7 +6,9 @@ import {
     Briefcase, 
     Layout, 
     MessageSquare, 
-    Globe 
+    Globe,
+    Printer,
+    FileDown
 } from 'lucide-react';
 
 export default function Navbar() {
@@ -40,10 +42,35 @@ export default function Navbar() {
                 <button 
                     onClick={toggleLanguage}
                     className="lang-toggle-nav"
+                    title={language === 'es' ? 'Cambiar idioma' : 'Change language'}
                 >
                     <Globe className="w-5 h-5" />
                     <span>{language.toUpperCase()}</span>
                 </button>
+
+                <div className="nav-divider"></div>
+
+                <div className="nav-actions">
+                    <button
+                        onClick={() => window.print()}
+                        className="nav-action-btn"
+                        title={language === 'es' ? 'Imprimir' : 'Print'}
+                    >
+                        <Printer className="w-5 h-5" />
+                    </button>
+                    <button
+                        onClick={() => {
+                            const prevTitle = document.title;
+                            document.title = 'Otoniel_Berroa_Portfolio';
+                            window.print();
+                            document.title = prevTitle;
+                        }}
+                        className="nav-action-btn pdf"
+                        title={language === 'es' ? 'Guardar como PDF' : 'Save as PDF'}
+                    >
+                        <FileDown className="w-5 h-5" />
+                    </button>
+                </div>
             </div>
         </motion.nav>
     );
