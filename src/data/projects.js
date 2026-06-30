@@ -46,5 +46,29 @@ export const projects = [
         },
         tech: "MQL4, MetaTrader 4, Advanced Risk Management, Multi-Indicator Analysis",
         image: "/projects-showcase/trading-bot.png"
+    },
+    {
+        es: {
+            title: "AEI Fundición: Monitoreo de Producción Industrial",
+            description: "Sistema industrial de monitorización en tiempo real para el seguimiento del proceso de fundición y mezclado. Controla fases ('trompos') calculando volúmenes de colada, duraciones operativas y eficiencias. Incluye una API REST integrada con autenticación JWT (LexikJWT) para interoperabilidad móvil/web, y un servicio automatizado de alertas de correo electrónico ante anomalías de producción."
+        },
+        en: {
+            title: "AEI Fundición: Industrial Production Monitoring",
+            description: "Industrial real-time monitoring system for casting and mixing tracking. Manages production phases ('trompos') by calculating casting volumes, running duration, and efficiency metrics. Includes a REST API secured via JWT (LexikJWT) for web/mobile client interoperability, and an automated email alert service for production anomalies."
+        },
+        tech: "Symfony 5.3, PHP, JWT Auth, KnpPaginator, Doctrine ORM, Mailer, PostgreSQL",
+        image: "/projects-showcase/aei-fundicion.png"
+    },
+    {
+        es: {
+            title: "AEI Sislog: Control de Logística y Almacén",
+            description: "Plataforma corporativa para el control de entrada de mercancías y planificación logística ('SISLOG'). Integra autenticación unificada por LDAP corporativo. Automatiza la importación de datos a través de hojas de cálculo de gran tamaño (PhpSpreadsheet), gestionando facturas de importación/locales, listas de empaque, números de BL (conocimiento de embarque) y partes de entrada."
+        },
+        en: {
+            title: "AEI Sislog: Logistics & Warehouse Control",
+            description: "Enterprise platform for merchandise entry control and logistics planning ('SISLOG'). Integrates single sign-on via corporate LDAP. Automates data import from large Excel spreadsheets (PhpSpreadsheet), managing import/local invoices, packing lists, BL (Bill of Lading) numbers, and receiving logs."
+        },
+        tech: "Symfony 5.2, PHP, LDAP, PhpSpreadsheet, KnpPaginator, Doctrine ORM, MySQL",
+        image: "/projects-showcase/aei-sislog.png"
     }
 ];
