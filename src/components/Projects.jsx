@@ -18,7 +18,9 @@ const projectImages = [
     "/projects-showcase/gmail-pdf-agent.png",
     "/projects-showcase/ico-platform.png",
     "/projects-showcase/chronowar.png",
-    "/projects-showcase/trading-bot.png"
+    "/projects-showcase/trading-bot.png",
+    "/projects-showcase/aei-fundicion.png",
+    "/projects-showcase/aei-sislog.png"
 ];
 
 export default function Projects() {

@@ -61,6 +61,16 @@
         "title": "Algoritmos de Trading (MT4 – MQL4)",
         "description": "Sistemas de trading cuantitativo de nivel institucional. Implementa cobertura (hedging), monitoreo dinámico de spreads y protección de equidad, con gestión de riesgo avanzada: objetivo de beneficio, trailing stop, y mapa de tickets para optimizar cierres. Evalúa múltiples indicadores (EMA, MACD, RSI, Ichimoku, Bollinger, ZigZag) y utiliza IA para señalizar compras/ventas. Diseñado para operar autónomamente en mercados de alta volatilidad con latencia mínima.",
         "tech": "MQL4, C++, MetaTrader 4, Gestión Avanzada de Riesgo, Análisis Multi-Indicador"
+      },
+      {
+        "title": "AEI Fundición: Monitoreo de Producción Industrial",
+        "description": "Sistema industrial de monitorización en tiempo real para el seguimiento del proceso de fundición y mezclado. Controla fases ('trompos') calculando volúmenes de colada, duraciones operativas y eficiencias. Incluye una API REST integrada con autenticación JWT (LexikJWT) para interoperabilidad móvil/web, y un servicio automatizado de alertas de correo electrónico ante anomalías de producción.",
+        "tech": "Symfony 5.3, PHP, JWT Auth, KnpPaginator, Doctrine ORM, Mailer, PostgreSQL"
+      },
+      {
+        "title": "AEI Sislog: Control de Logística y Almacén",
+        "description": "Plataforma corporativa para el control de entrada de mercancías y planificación logística ('SISLOG'). Integra autenticación unificada por LDAP corporativo. Automatiza la importación de datos a través de hojas de cálculo de gran tamaño (PhpSpreadsheet), gestionando facturas de importación/locales, listas de empaque, números de BL (conocimiento de embarque) y partes de entrada.",
+        "tech": "Symfony 5.2, PHP, LDAP, PhpSpreadsheet, KnpPaginator, Doctrine ORM, MySQL"
       }
     ]
   },

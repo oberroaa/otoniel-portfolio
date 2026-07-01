@@ -61,6 +61,16 @@
         "title": "Trading Algorithms (MT4 – MQL4)",
         "description": "Institutional-level quantitative trading systems. Implements hedging, dynamic spread monitoring, advanced risk management (target profit, trailing stop, ticket mapping), and evaluates multiple indicators (EMA, MACD, RSI, Ichimoku, Bollinger, ZigZag) with AI-driven signal generation. Designed for autonomous operation in high-volatility markets with minimal latency.",
         "tech": "MQL4, C++, MetaTrader 4, Advanced Risk Management, Multi-Indicator Analysis"
+      },
+      {
+        "title": "AEI Fundición: Industrial Production Monitoring",
+        "description": "Industrial real-time monitoring system for casting and mixing tracking. Manages production phases ('trompos') by calculating casting volumes, running duration, and efficiency metrics. Includes a REST API secured via JWT (LexikJWT) for web/mobile client interoperability, and an automated email alert service for production anomalies.",
+        "tech": "Symfony 5.3, PHP, JWT Auth, KnpPaginator, Doctrine ORM, Mailer, PostgreSQL"
+      },
+      {
+        "title": "AEI Sislog: Logistics & Warehouse Control",
+        "description": "Enterprise platform for merchandise entry control and logistics planning ('SISLOG'). Integrates single sign-on via corporate LDAP. Automates data import from large Excel spreadsheets (PhpSpreadsheet), managing import/local invoices, packing lists, BL (Bill of Lading) numbers, and receiving logs.",
+        "tech": "Symfony 5.2, PHP, LDAP, PhpSpreadsheet, KnpPaginator, Doctrine ORM, MySQL"
       }
     ]
   },
