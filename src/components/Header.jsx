@@ -79,10 +79,6 @@ export default function Header() {
                     <Mail className="w-4 h-4" />
                     <span>oberroaa@gmail.com</span>
                 </a>
-                <a href="/Portfolio_Otoniel_Berroa.pdf" download="Portfolio_Otoniel_Berroa.pdf" target="_blank" rel="noopener noreferrer" className="action-btn" style={{ backgroundColor: 'var(--accent-primary)', color: 'white', border: 'none' }}>
-                    <Printer className="w-4 h-4" />
-                    <span>{t.printBtn || "Imprimir / Descargar CV"}</span>
-                </a>
                 <div className="social-links-group">
                     <a href="https://linkedin.com/in/otoniel-berroa" target="_blank" rel="noopener noreferrer" className="icon-link">
                         <ExternalLink className="w-5 h-5" />
