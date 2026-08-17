@@ -1251,21 +1251,26 @@ a:hover {
   }
 
   .pv-body {
+    display: block;
+  }
+
+  .pv-body::after {
+    content: "";
     display: table;
-    width: 100%;
+    clear: both;
   }
 
   .pv-left {
-    display: table-cell;
+    float: left;
     width: 65%;
     padding-right: 2rem;
-    vertical-align: top;
+    box-sizing: border-box;
   }
 
   .pv-right {
-    display: table-cell;
+    float: left;
     width: 35%;
-    vertical-align: top;
+    box-sizing: border-box;
   }
 
   .pv-section {
