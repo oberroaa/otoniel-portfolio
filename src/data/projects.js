@@ -49,14 +49,14 @@ export const projects = [
     },
     {
         es: {
-            title: "AEI Fundición: Monitoreo de Producción Industrial",
-            description: "Sistema industrial de monitorización en tiempo real para el seguimiento del proceso de fundición y mezclado. Controla fases ('trompos') calculando volúmenes de colada, duraciones operativas y eficiencias. Incluye una API REST integrada con autenticación JWT (LexikJWT) para interoperabilidad móvil/web, y un servicio automatizado de alertas de correo electrónico ante anomalías de producción."
+            title: "AEI Fundición: Monitoreo de Producción (Symfony & Laravel)",
+            description: "Sistema industrial de monitorización en tiempo real para el seguimiento del proceso de fundición y mezclado. Desarrollado en dos versiones completas e idénticas (Symfony 7 y Laravel 12) para demostrar dominio en ambos ecosistemas. Controla fases ('trompos') calculando volúmenes de colada, duraciones operativas y eficiencias con interfaces reactivas en Alpine.js y Tailwind CSS."
         },
         en: {
-            title: "AEI Fundición: Industrial Production Monitoring",
-            description: "Industrial real-time monitoring system for casting and mixing tracking. Manages production phases ('trompos') by calculating casting volumes, running duration, and efficiency metrics. Includes a REST API secured via JWT (LexikJWT) for web/mobile client interoperability, and an automated email alert service for production anomalies."
+            title: "AEI Fundición: Production Monitoring (Symfony & Laravel)",
+            description: "Industrial real-time monitoring system for casting and mixing tracking. Developed in two complete and identical versions (Symfony 7 and Laravel 12) to demonstrate mastery in both ecosystems. Manages production phases ('trompos') by calculating casting volumes, running duration, and efficiency metrics with reactive interfaces in Alpine.js and Tailwind CSS."
         },
-        tech: "Symfony 5.3, PHP, JWT Auth, KnpPaginator, Doctrine ORM, Mailer, PostgreSQL",
+        tech: "Symfony 7.4 / Laravel 12, PHP, Tailwind CSS, Alpine.js, Doctrine / Eloquent ORM, SQLite",
         image: "/projects-showcase/aei-fundicion.png"
     },
     {
