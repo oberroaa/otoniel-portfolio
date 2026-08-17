@@ -1165,6 +1165,7 @@ a:hover {
     color: #1a1a2e;
     font-size: 10pt;
     line-height: 1.4;
+    padding: 1.5cm;
   }
 
   /* Reset layout constraints */
@@ -1186,7 +1187,7 @@ a:hover {
 
   @page {
     size: A4 portrait;
-    margin: 1.5cm;
+    margin: 0;
   }
 
   /* ── PRINT VIEW LAYOUT ── */
