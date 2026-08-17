@@ -1165,7 +1165,8 @@ a:hover {
     color: #1a1a2e;
     font-size: 10pt;
     line-height: 1.4;
-    padding: 1.5cm;
+    padding: 1.5cm 1.5cm !important;
+    box-sizing: border-box !important;
   }
 
   /* Reset layout constraints */
