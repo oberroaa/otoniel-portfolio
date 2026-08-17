@@ -3,7 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 const skillGroups = [
     { title: { es: 'Lenguajes & Core', en: 'Languages & Core' }, items: ['JavaScript (ES15+)', 'TypeScript', 'Python', 'MQL4', 'PHP', 'HTML5/CSS3'] },
     { title: { es: 'IA & Automatización', en: 'AI & Automation' }, items: ['AI Orchestration', 'Google Gemini Pro', 'Autonomous Agents', 'LLM Fine-tuning', 'AI Logic Validation'] },
-    { title: { es: 'Arquitectura Backend', en: 'Backend Architecture' }, items: ['Node.js (NestJS/Express)', 'Prisma ORM', 'TypeORM', 'PostgreSQL', 'MongoDB Atlas', 'Supabase'] },
+    { title: { es: 'Arquitectura Backend', en: 'Backend Architecture' }, items: ['Node.js (NestJS/Express)', 'Symfony', 'Laravel', 'Prisma ORM', 'TypeORM', 'PostgreSQL', 'MongoDB Atlas', 'Supabase'] },
     { title: { es: 'Frontend', en: 'Frontend' }, items: ['React 19', 'TanStack Query v5', 'Zustand', 'Zod', 'Styled Components', 'Tailwind CSS'] },
     { title: { es: 'Cloud & DevOps', en: 'Cloud & DevOps' }, items: ['GitHub Actions (CI/CD)', 'Docker', 'Vercel', 'Meta WhatsApp API', 'Gmail API'] },
     { title: { es: 'Herramientas', en: 'Tools' }, items: ['Git', 'RxJS', 'Postman', 'JWT Security', 'Rate Limiting', 'Helmet Security'] },
