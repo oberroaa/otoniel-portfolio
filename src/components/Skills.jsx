@@ -28,7 +28,7 @@ export default function Skills() {
         { 
             icon: <Server className="text-indigo-400" />, 
             title: { es: "Arquitectura Backend", en: "Backend Architecture" }, 
-            items: ["Node.js (NestJS/Express)", "Prisma ORM", "TypeORM", "PostgreSQL", "Supabase", "MongoDB Atlas"] 
+            items: ["Node.js (NestJS/Express)", "Symfony", "Laravel", "Prisma ORM", "TypeORM", "PostgreSQL", "Supabase", "MongoDB Atlas"] 
         },
         { 
             icon: <Monitor className="text-pink-400" />, 
