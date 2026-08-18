@@ -16,7 +16,13 @@ export default function PrintView() {
 
     return (
         <div className="pv-root">
-            {/* ── HEADER ── */}
+            <table style={{ width: '100%', borderCollapse: 'collapse', borderSpacing: 0 }}>
+                <thead>
+                    <tr><td><div style={{ height: '1.5cm' }}></div></td></tr>
+                </thead>
+                <tbody>
+                    <tr><td>
+                        {/* ── HEADER ── */}
             <header className="pv-header">
                 <img src="/profile.jpg" alt="Otoniel Berroa" className="pv-avatar" />
                 <div className="pv-header-info">
@@ -125,7 +131,13 @@ export default function PrintView() {
                         <p className="pv-text">Miami, FL</p>
                     </section>
                 </div>
-            </div>
+                    </div>
+                </td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td><div style={{ height: '1.5cm' }}></div></td></tr>
+                </tfoot>
+            </table>
         </div>
     );
 }
